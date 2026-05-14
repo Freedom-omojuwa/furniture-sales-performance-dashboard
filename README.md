@@ -270,7 +270,7 @@ The Consumer segment generated the highest overall sales contribution compared t
 
 ---
 
-## 12. Author
+## 13. Author
 
 **Freedom Omojuwa**
 Aspiring Data Analyst | Quantity Surveying Graduate
