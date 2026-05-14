@@ -78,30 +78,17 @@ The final result is a dynamic sales performance dashboard that provides insights
 ## 4. Repository Structure
 
 ```
-[project-root]/
+furniture-sales-performance-dashboard/
 │
 ├── data/
-│   ├── raw/                  # Original, unmodified source data - never edited
-│   ├── processed/            # Cleaned and transformed data
-│   └── external/             # Reference data, lookup tables, third-party files
+│   ├── raw/          # Original dataset before cleaning
+│   └── processed/    # Cleaned and transformed data used for analysis
 │
-├── notebooks/                # Jupyter, R Markdown, or Colab notebooks
+├── dashboard/        # Excel dashboard file (.xlsx)
 │
-├── scripts/                  # Reusable .py, .R, or .sh processing files
+├── visuals/          # Dashboard screenshots for README
 │
-├── queries/                  # SQL files (retain this folder for SQL-heavy projects)
-│   ├── exploratory/          # Ad-hoc or investigative queries
-│   ├── transformations/      # Cleaning and reshaping logic
-│   └── final/                # Production-ready or presentation queries
-│
-├── reports/                  # Final outputs: PDFs, slide decks, Word docs
-│
-├── visuals/                  # Exported charts, dashboard screenshots, ERD diagrams
-│
-├── docs/                     # Data dictionaries, schema notes, reference material
-│
-├── project_metadata.yml      # Machine-readable metadata (optional)
-└── README.md                 # You are here
+└── README.md         # You are here (Project documentation)
 ```
 
 > ⚠️ *Delete folders you didn't use. An empty folder is worse than no folder.*
@@ -111,79 +98,66 @@ The final result is a dynamic sales performance dashboard that provides insights
 
 ## 5. Data Workflow
 
-<!--
-  Show how data moved through your project - from source to output.
-  Every transformation decision should be traceable here.
-
-  WHAT GOOD LOOKS LIKE:
-  1. Source: "Monthly CSV exports pulled from the internal POS system.
-              Five files, one per region, covering Jan 2023–Jun 2024."
-  2. Ingestion: "Loaded into Python using pandas. Files concatenated into
-                 a single dataframe (approx. 340,000 rows)."
-  3. Cleaning: "Removed 1.2% of rows with null transaction IDs.
-                Standardised date formats across regional files.
-                Resolved product category naming inconsistencies (3 variants → 1)."
-  4. Transformation: "Created a returns_rate field at product-category level.
-                      Aggregated to weekly and regional grain for trend analysis."
-  5. Analysis: "Descriptive statistics, regional comparison, return rate
-                segmentation by product category."
-  6. Output: "Summary report (PDF), annotated notebook, processed CSV."
-
-  WHAT TO AVOID:
-  ❌ "Data was cleaned and analysed." (No chain. No decisions. No trust.)
--->
-
 ```
-[Data Source(s)]
+Sales Dataset
       ↓
-[Ingestion / Collection Method]
+Data Import into Excel
       ↓
-[Cleaning & Transformation]
+Data Cleaning & Transformation (Power Query)
       ↓
-[Analysis / Modelling / Querying]
+Pivot Table & Pivot Chart Analysis
       ↓
-[Output / Visualisation / Reporting]
+Interactive Dashboard Development
+      ↓
+Business Insights & Reporting
 ```
 
 1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
-5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
-6. **Output:** [What form do the results take?]
+2. **Ingestion:** Dataset imported into Microsoft Excel.
+3. **Cleaning:** Removed duplicates, standardized formats, and handled inconsistent entries using Power Query.
+4. **Transformation:** Created calculated fields, KPIs, and summarized data for dashboard reporting.
+5. **Analysis:** Performed trend analysis, category analysis, shipping analysis, and regional comparisons using Pivot Tables and Charts
+6. **Output:** Interactive Excel dashboard with filters, KPIs, and visual reports.
 
 ---
 
 ## 6. Data Model & Schema
 
-<!--
-  Define your fields so that someone reading your analysis can follow along
-  without digging through your code.
+# 6. Data Model & Schema
 
-  WHAT GOOD LOOKS LIKE (one row example):
-  | transaction_id | string | Unique identifier per sales transaction | TXN-00482 |
-  | return_flag    | boolean | Whether the transaction included a return | TRUE |
-  | region_code    | string | Two-letter identifier for store region | "NE" |
+## Dataset: Furniture Sales Data
 
-  WHAT TO AVOID:
-  ❌ Skipping this section because "the field names are self-explanatory."
-     They're not. Not to a reviewer. Not to you in six months.
+This dataset contains transactional-level furniture sales records used for analysis and dashboard development.
 
-  📌 FOR SQL PROJECTS: If you have multiple tables, create one block per table.
-     Describe join keys and relationships here. Your ERD (Section 7) will
-     visualise what this section describes in text.
+Each row represents a single sales transaction, including customer, product, shipping, and financial details.
 
-  📌 FOR NON-SQL PROJECTS: Describe the shape of your dataset informally
-     if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
--->
+---
 
-### Dataset / Table: `[name]`
+## Data Structure
 
-| Field Name | Data Type | Description | Example Value |
-|------------|-----------|-------------|---------------|
-| `[field_1]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_2]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_3]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
+| Field Name     | Data Type | Description | Example Value |
+|----------------|----------|-------------|---------------|
+| Order ID       | Text     | Unique identifier for each order | CA-2016-152156 |
+| Order Date     | Date     | Date the order was placed | 11/08/2016 |
+| Ship Date      | Date     | Date the order was shipped | 11/11/2016 |
+| Ship Mode      | Text     | Shipping method used | Second Class |
+| Customer ID    | Text     | Unique identifier for each customer | CG-12520 |
+| Customer Name  | Text     | Name of the customer | Claire Gute |
+| Segment        | Text     | Customer segment | Consumer |
+| Country        | Text     | Country of purchase | United States |
+| City           | Text     | Customer city | Henderson |
+| State          | Text     | Customer state | Kentucky |
+| Region         | Text     | Geographic region | South |
+| Product ID     | Text     | Unique product identifier | FUR-BO-10001798 |
+| Category       | Text     | Product category | Furniture |
+| Sub-Category   | Text     | Product sub-category | Bookcases |
+| Product Name   | Text     | Name of the product | Bush Somerset Collection Bookcase |
+| Sales          | Number   | Revenue generated from sale | 261.96 |
+| Quantity       | Number   | Number of units purchased | 2 |
+| Discount       | Number   | Discount applied to order | 0.00 |
+| Profit         | Number   | Profit generated from order | 41.91 |
+| Duration       | Text     | Shipping duration | 3 days |
+| Month          | Text     | Month of order | Nov |
 
 > **Row count (approx.):** [X rows]
 > **Date range:** [Start] – [End]
