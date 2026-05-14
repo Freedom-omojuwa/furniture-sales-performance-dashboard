@@ -24,40 +24,28 @@
 
 ## 1. Project Overview
 
-**Context:** [This project was developed as part of a hands-on end-to-end Excel dashboard project focused on analyzing furniture sales data across multiple regions in the United States.]
+**Context:** 
+This project was developed as part of a hands-on end-to-end Excel dashboard project focused on analyzing furniture sales data across multiple regions in the United States.
 
-**Problem Statement:** [The specific question or challenge you were addressing.]
+**Problem Statement:** 
+Businesses often struggle to quickly identify sales trends, profitable regions, top-performing categories, and shipping performance from large sales datasets.
 
-**Approach:** [In 1–2 sentences - how did you tackle it?]
+**Approach:**  
+Using Microsoft Excel, Power Query, Pivot Tables, Pivot Charts, and slicers, raw sales data was cleaned, transformed, analyzed, and visualized into an interactive dashboard.
 
-**Outcome:** [What did you produce or discover?]
+**Outcome:**
+The final result is a dynamic sales performance dashboard that provides insights into revenue, profit, shipping methods, customer segments, and regional sales performance.
 
 ---
 
 ## 2. Objectives
 
-<!--
-  Write objectives that are specific enough to succeed or fail.
-  Use action-oriented verbs: Identify, Determine, Quantify, Build, Evaluate.
+- **Primary Objective:** Build an interactive Excel dashboard to analyze furniture sales performance across regions and customer segments.
+- **Secondary Objective 1:** Identify trends in sales, profit, and quantity sold over time.
+- **Secondary Objective 2:** Analyze shipping methods and delivery performance.
+- **Secondary Objective 3:** Visualize geographic and category-level sales performance.
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Determine whether customer churn rate correlates with support ticket volume."
-  ✅ "Identify the top three revenue-driving product categories across all regions."
-  ✅ "Build a reproducible pipeline that ingests and cleans daily sales exports."
-
-  WHAT TO AVOID:
-  ❌ "Explore the data."
-  ❌ "Gain insights."
-  ❌ "Understand trends."
-  (These can't fail - which means they can't succeed either.)
--->
-
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
-
-> 💡 *Every analysis decision in this project traces back to one of these objectives.*
+> 💡 *Every analysis and dashboard component in this project was designed to support these objectives.*
 
 ---
 
