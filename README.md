@@ -216,6 +216,7 @@ Monthly sales trends show stronger sales performance during November and Decembe
 ### Insight 6: Consumer Customers Contributed the Largest Share of Sales
 
 The Consumer segment generated the highest overall sales contribution compared to Corporate and Home Office segments, showing that individual customers drove most of the revenue.
+
 ---
 
 ## 9. Recommendations
