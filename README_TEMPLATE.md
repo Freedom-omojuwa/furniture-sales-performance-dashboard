@@ -53,42 +53,25 @@ The final result is a dynamic sales performance dashboard that provides insights
 
 ### Scope
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  In Scope: "Transaction-level data for Regions A–E, Jan 2023–Jun 2024.
-             Analysis covers revenue, return rates, and product category performance."
-  Out of Scope: "Customer demographics and marketing spend data were excluded -
-                 demographic data was incomplete for two regions, and marketing
-                 data sits in a separate system outside this engagement."
-
-  WHAT TO AVOID:
-  ❌ Leaving Out of Scope blank. This is the section that protects your credibility.
-     If you don't define the fence, reviewers assume you missed things.
 -->
 
-| Dimension | Details |
-|-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| Dimension        | Details |
+|-----------------|---------|
+| **In Scope**     | Furniture sales data, sales trends, shipping analysis, customer segments, category performance, and regional analysis |
+| **Out of Scope** | Predictive modeling, customer demographics, and advanced statistical forecasting |
+| **Time Period**  | Historical sales transaction dataset used within the tutorial project |
+| **Granularity**  | Transaction-level sales records |
 
 ### Tools & Technologies
 
-<!--
-  List only what you actually used on this project.
-  This is not your skills section - it's the project's technical context.
--->
-
-| Category | Tool(s) Used |
-|----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| Category        | Tool(s) Used |
+|----------------|-------------|
+| Data Storage    | Excel Workbook / CSV Dataset |
+| Data Processing | Microsoft Excel, Power Query |
+| Analysis        | Pivot Tables, Pivot Charts |
+| Visualization   | Microsoft Excel Dashboard |
+| Documentation   | Microsoft Excel / Excel Notes |
+| Other           | Slicers, Dynamic Titles |
 
 ---
 
