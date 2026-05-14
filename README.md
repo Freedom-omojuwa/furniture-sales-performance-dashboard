@@ -1,7 +1,7 @@
 # Furniture Sales Performance Dashboard (Excel)
 > *Interactive Excel dashboard analyzing furniture sales performance across different regions in the United States to uncover trends in sales, profit, shipping, and customer segments for better business decision-making.*
 
-
+![Furniture Sales Dashboard](visuals/dashboard.png)
 ---
 
 ## Table of Contents
@@ -84,7 +84,7 @@ furniture-sales-performance-dashboard/
 │   ├── raw/          # Original dataset before cleaning
 │   └── processed/    # Cleaned and transformed data used for analysis and dashboard 
 │
-├── visuals/          # picture of Dashboard 
+├── visuals/          # Dashboard screenshots and exported visuals 
 │
 └── README.md         # You are here (Project documentation)
 ```
@@ -117,8 +117,6 @@ Business Insights & Reporting
 ---
 
 ## 6. Data Model & Schema
-
-# 6. Data Model & Schema
 
 ## Dataset: Furniture Sales Data
 
@@ -170,96 +168,109 @@ The analysis was carried out using Pivot Tables, Pivot Charts, and Excel formula
 
 ## Key Metrics Defined
 
-| Metric | Definition | Purpose |
-|--------|------------|---------|
-| Total Sales | Sum of all sales revenue across transactions | Measures overall business revenue performance |
-| Total Profit | Sum of profit from all transactions | Shows overall profitability of the business |
-| Total Quantity | Total number of items sold | Measures sales volume and demand |
-| Average Discount | Average discount applied across orders | Helps assess pricing and discount strategy |
-| Profit Margin | Profit divided by Sales | Indicates efficiency and profitability of sales |
+| Metric | Definition | Why It Matters |
+|--------|------------|----------------|
+| Total Sales | Total revenue generated from all furniture transactions | Measures overall business sales performance |
+| Total Profit | Total profit earned after discounts and sales | Measures profitability performance |
+| Total Quantity | Total number of products sold | Measures sales volume and customer demand |
+| YoY Growth | Percentage increase or decrease compared to the previous year | Tracks yearly business performance changes |
+| Shipping Duration | Number of days between order date and ship date | Evaluates delivery performance and shipping efficiency |
 
-### Methods Used
+---
+## Methods Used
 
-- Pivot Tables for data aggregation and summarization  
-- Pivot Charts for visual trend analysis  
-- Filtering by Region, Segment, and Category using slicers  
-- Time-based analysis using Order Date and Month fields  
-- KPI calculations for Sales, Profit, and Quantity  
-- Comparative analysis across regions and categories  
+- Data cleaning and transformation using Power Query
+- KPI calculations for Sales, Profit, and Quantity
+- Pivot Tables for summarization and aggregation
+- Pivot Charts for monthly sales trend analysis
+- Geographic sales analysis using Excel Map visuals
+- Shipping mode and shipping duration analysis
+- Interactive filtering using Region and Segment slicers
+- Category and city-level sales comparison 
 
 ---
 
+
 ## 8. Key Insights
 
-**Insight 1: Regional Performance Drives Revenue Differences**
-Sales performance varies significantly across regions, with certain regions consistently outperforming others in both sales and profit. This suggests that regional demand, customer behavior, or operational efficiency plays a major role in revenue distribution.
+### Insight 1: California Recorded the Highest Sales Performance
 
-**Insight 2: High Sales Do Not Always Equal High Profit**
-Some high-sales orders or categories do not translate into high profit due to discounts and cost factors. This indicates that profitability is strongly influenced by pricing strategy, not just sales volume.
+The dashboard shows that California generated the highest sales contribution among all states, indicating stronger customer demand and higher transaction activity compared to other regions.
 
-**Insight 3: Consumer Segment Contributes the Highest Sales Volume**
-The Consumer segment accounts for the largest share of total sales compared to Corporate and Home Office segments, showing that individual customers drive most of the revenue.
+### Insight 2: Chairs Were the Best-Performing Furniture Category
 
-**Insight 4: Shipping Mode Distribution Affects Delivery Patterns**
-Standard Class shipping is the most frequently used method, indicating customer preference for cost-effective shipping options over faster delivery methods.
+Among all furniture sub-categories, Chairs generated the highest sales revenue, making it the strongest-performing product category in the dataset.
 
-**Insight 5: Seasonal Fluctuations Exist in Monthly Sales**
-Sales performance fluctuates across months, with certain months showing higher peaks. This suggests seasonality in furniture demand and potential opportunities for targeted promotions.
+### Insight 3: Standard Class Was the Most Frequently Used Shipping Method
 
+Most customer orders were shipped using Standard Class delivery, suggesting a preference for more cost-effective shipping options over faster premium methods.
+
+### Insight 4: Most Orders Were Delivered Within 4–5 Days
+
+Shipping duration analysis revealed that the majority of orders were delivered within 4 to 5 days, showing relatively stable delivery performance across transactions.
+
+### Insight 5: Sales Increased Significantly Toward Year-End
+
+Monthly sales trends show stronger sales performance during November and December, suggesting possible seasonal demand increases during the end of the year.
+
+### Insight 6: Consumer Customers Contributed the Largest Share of Sales
+
+The Consumer segment generated the highest overall sales contribution compared to Corporate and Home Office segments, showing that individual customers drove most of the revenue.
 ---
 
 ## 9. Recommendations
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | Focus marketing and inventory allocation on high-performing regions to maximize revenue and ensure stock availability in strong markets | Insight 1 | Sales & Inventory Team |
-| Medium | Review pricing and discount strategies for low-profit sales to improve overall profitability without reducing demand | Insight 2 | Pricing/Finance Team |
-| Medium | Run targeted campaigns for the Consumer segment to further increase revenue contribution while exploring growth in Corporate and Home Office segments | Insight 3 | Marketing Team |
-| Low | Optimize shipping strategy by evaluating the cost vs efficiency of Standard Class shipping to improve delivery performance | Insight 4 | Operations & Logistics Team |
+| High | Increase inventory availability and marketing activities in top-performing states such as California to maximize revenue opportunities | Insight 1 | Sales & Inventory Team |
+| High | Focus promotional campaigns on high-performing categories like Chairs to drive additional sales growth | Insight 2 | Marketing Team |
+| Medium | Maintain and optimize Standard Class shipping operations since it is the most preferred shipping method among customers | Insight 3 | Operations Team |
+| Medium | Prepare targeted promotional campaigns before peak sales periods such as November and December | Insight 5 | Marketing & Sales Team |
+| Low | Develop strategies to improve engagement and sales contribution from Corporate and Home Office customer segments | Insight 6 | Business Development Team |
 ---
 
-## 11. Assumptions & Limitations
+## 10. Assumptions & Limitations
 
-## Assumptions
+### Assumptions
 
-- All transaction records in the dataset are assumed to be complete and accurate.
-- Sales, profit, and discount values are assumed to be correctly recorded without external validation from accounting systems.
-- Shipping duration values are assumed to reflect actual delivery timelines.
-- Customer and product information is assumed to be consistent across all records.
-
----
-
-## Limitations
-
-- The analysis is based on historical data only and does not include predictive forecasting.
-- Customer demographic data (e.g., age, income, behavior patterns) is not available, limiting deeper customer segmentation.
-- External factors such as marketing campaigns, competition, or economic conditions are not included in the dataset.
-- The dataset is a tutorial/sample dataset and may not fully represent real-world business complexity.
-- Analysis is limited to Excel capabilities (no advanced statistical or machine learning modeling applied).*
+- All transaction records in the dataset were assumed to be complete and accurate.
+- Sales, profit, and discount values were assumed to be correctly recorded.
+- Shipping duration values were assumed to reflect actual delivery timelines.
+- Customer and regional information were assumed to be consistent across all records.
 
 ---
 
-## 12. Future Enhancements
+### Limitations
 
-- [ ] Automate data cleaning and transformation using Power Query refresh connections to reduce manual work
-- [ ] Build a Power BI version of the dashboard for more advanced interactivity and real-time insights
-- [ ] Integrate forecasting models to predict future sales trends based on historical performance
-- [ ] Include customer demographic or behavioral data to improve segmentation and targeting analysis
+- The dataset is a sample/tutorial dataset and may not fully represent real-world business operations.
+- The analysis focuses only on historical sales data and does not include predictive forecasting.
+- Customer demographic and behavioral data were not included in the dataset.
+- External business factors such as marketing spend, economic conditions, and competitor activity were not considered.
+- The project was developed entirely in Excel without advanced statistical or machine learning analysis.
 
 ---
 
-## 13. Deliverables
+## 11. Future Enhancements
+
+- [ ] Build a Power BI version of the dashboard for enhanced interactivity
+- [ ] Add automated dashboard refresh using Power Query connections
+- [ ] Include predictive sales forecasting analysis
+- [ ] Expand the dashboard with additional KPIs and customer behavior analysis
+
+---
+
+## 12. Deliverables
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| Raw Dataset | Original unprocessed sales data used for analysis | `/data/raw/` |
-| Processed Dataset | Cleaned and transformed dataset used in pivot tables and analysis | `/data/processed/` |
-| Visuals | furniture sales performance dashboard with slicers and KPIs | `/visuals/` |
-| README Documentation | Full project documentation explaining workflow, insights, and analysis | `/README.md` |
+| Raw Dataset | Original furniture sales dataset used for analysis | `/data/raw/` |
+| Processed Dataset | Cleaned and transformed dataset used for dashboard reporting including Interactive Excel dashboard with KPIs, slicers, charts, and maps | `/data/processed/` |
+| Dashboard Visuals | Dashboard screenshots and exported visuals | `/visuals/` |
+| README Documentation | Full project documentation and workflow explanation | `/README.md` |
 
 ---
 
-## 14. Author
+## 12. Author
 
 **Freedom Omojuwa**
 Aspiring Data Analyst | Quantity Surveying Graduate
