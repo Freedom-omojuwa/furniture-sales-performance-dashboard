@@ -1,19 +1,6 @@
 # Furniture Sales Performance Dashboard (Excel)
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+> *Interactive Excel dashboard analyzing furniture sales performance across different regions in the United States to uncover trends in sales, profit, shipping, and customer segments for better business decision-making.*
 
----
-
-## ⚙️ Project Type Flags
-> *Check what applies. This helps reviewers and collaborators understand the nature of the work at a glance. Delete this block before publishing.*
-
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
-- [ ] Data Pipeline / ETL
-- [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
-- [ ] End-to-End (multiple of the above)
-- [ ] Other: ___________
 
 ---
 
