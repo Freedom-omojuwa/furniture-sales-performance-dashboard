@@ -276,7 +276,7 @@ The Consumer segment generated the highest overall sales contribution compared t
 **Freedom Omojuwa**
 Aspiring Data Analyst | Quantity Surveying Graduate
 
-- 🔗 [LinkedIn URL]
+- 🔗 linkedin.com/in/freedom-omojuwa-1a64b8249
 - 💼 freedom-omojuwa.github.io
 - 📧 Freedomomojuwa@gmail.com
 
