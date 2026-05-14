@@ -91,9 +91,6 @@ furniture-sales-performance-dashboard/
 └── README.md         # You are here (Project documentation)
 ```
 
-> ⚠️ *Delete folders you didn't use. An empty folder is worse than no folder.*
-> SQL-heavy projects: keep `queries/`. Analysis-only projects: keep `notebooks/`. Both? Keep both.
-
 ---
 
 ## 5. Data Workflow
@@ -159,11 +156,8 @@ Each row represents a single sales transaction, including customer, product, shi
 | Duration       | Text     | Shipping duration | 3 days |
 | Month          | Text     | Month of order | Nov |
 
-> **Row count (approx.):** [X rows]
-> **Date range:** [Start] – [End]
-> **Key join / relationship:** [e.g., `orders.customer_id` → `customers.id`]
-
-*Add additional table blocks as needed for multi-table projects.*
+> **Row count (approx.):** 2122 rows
+> **Date range:** 01/06/2014 – 12/30/2017 
 
 ---
 
