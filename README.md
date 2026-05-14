@@ -82,11 +82,9 @@ furniture-sales-performance-dashboard/
 │
 ├── data/
 │   ├── raw/          # Original dataset before cleaning
-│   └── processed/    # Cleaned and transformed data used for analysis
+│   └── processed/    # Cleaned and transformed data used for analysis and dashboard 
 │
-├── dashboard/        # Excel dashboard file (.xlsx)
-│
-├── visuals/          # Dashboard screenshots for README
+├── visuals/          # picture of Dashboard 
 │
 └── README.md         # You are here (Project documentation)
 ```
@@ -254,10 +252,9 @@ Sales performance fluctuates across months, with certain months showing higher p
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| Excel Dashboard | Interactive furniture sales performance dashboard with slicers and KPIs | `/dashboard/` |
 | Raw Dataset | Original unprocessed sales data used for analysis | `/data/raw/` |
 | Processed Dataset | Cleaned and transformed dataset used in pivot tables and analysis | `/data/processed/` |
-| Visuals | Screenshots and exported charts from the dashboard | `/visuals/` |
+| Visuals | furniture sales performance dashboard with slicers and KPIs | `/visuals/` |
 | README Documentation | Full project documentation explaining workflow, insights, and analysis | `/README.md` |
 
 ---
