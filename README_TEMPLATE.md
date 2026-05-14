@@ -1,4 +1,4 @@
-# [Project Title]
+# Furniture Sales Performance Dashboard (Excel)
 > *One sentence. What did you analyze, build, or solve - and why does it matter?*
 
 ---
